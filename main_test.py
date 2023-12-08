@@ -12,7 +12,7 @@ class TestApp(unittest.TestCase):
 
     def test_read_data(self):
         response = self.client.get("/")
-        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.status_code, 300)
         self.assertEqual(response.json(), self.data)
 
     def test_read_data_by_guid(self):
